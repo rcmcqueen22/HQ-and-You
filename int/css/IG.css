@@ -1,0 +1,425 @@
+@font-face {
+    font-family: EamesBold;
+    src: url(http://www.hqandyou.com/fonts/Eames/EamesBold/EamesCenturyModONBold.otf);
+}
+
+@font-face {
+    font-family: EamesBoldItalic;
+    src: url(http://www.hqandyou.com/fonts/Eames/EamesBold/EamesCenturyModONBold-Italic.otf);
+}
+
+@font-face {
+    font-family: EamesBook;
+    src: url(http://www.hqandyou.com/fonts/Eames/EamesBook/EamesCenturyModONBook.otf);
+}
+
+@font-face {
+    font-family: EamesBoookItalic;
+    src: url(http://www.hqandyou.com/fonts/Eames/EamesBold/EamesCenturyModONBook-Italic.otf);
+}
+
+@font-face {
+    font-family: EamesThin;
+    src: url(http://www.hqandyou.com/fonts/Eames/EamesThin/EamesCenturyModONThin.otf);
+}
+
+@font-face {
+    font-family: EamesThinItalic;
+    src: url(http://www.hqandyou.com/fonts/Eames/EamesBold/EamesCenturyModONThin-Italic.otf);
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url(http://www.hqandyou.com/fonts/Gotham/Gotham-Bold/Gotham-Bold.ttf);
+}
+
+@font-face {
+    font-family: GothamBoldItalic;
+    src: url(../fonts/Gotham/Gotham-Bold/Gotham-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(../fonts/Gotham/Gotham-Book/Gotham-Book.ttf);
+}
+
+@font-face {
+    font-family: GothamBookItalic;
+    src: url(../fonts/Gotham/Gotham-Book/Gotham-BookItalic.ttf);
+}
+
+@font-face {
+    font-family: GothamThin;
+    src: url(../fonts/Gotham/Gotham-Thin/Gotham-Thin.ttf);
+}
+
+@font-face {
+    font-family: GothamThinItalic;
+    src: url(../fonts/Gotham/Gotham-Thin/Gotham-ThinItalic.ttf);
+}
+
+body {
+margin: 0;
+}
+
+.fun {
+    max-width: 1040px;
+    max-height: 500px;
+    background-color: #fff2f0;
+}
+
+.b_fun, .map_fun {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* .map_fun {
+   width: 1040px;
+   height: 500px;
+   background-image: url(img/swap.jpg);
+   background-position: 0 0;
+} */
+
+.map_fun {
+  width: 100%;
+  height: 0;
+  padding-bottom: 48%;
+  background-image: url(img/swap.jpg);
+  background-position: 0 0;
+  background-size: 100%;
+  display: block;
+}
+ 
+.map_fun:hover {
+  background-position: 0 100%;
+}
+
+.b_fun:hover {
+  opacity: .5;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.fadein {
+  max-width: 1040px;
+  height: 500px;
+  background-color: white;
+  position: relative;
+    background-color: #fff2f0;
+}
+
+.fadein img {
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.fun_bkg {
+    background-color: #fff2f0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    padding: 0;
+    border: 0;
+    margin: auto;
+    display: block;
+}
+
+.fun_header {
+    display: block;
+    width: 100%;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff2f0;
+}
+
+.fun_header h1{
+    font-family: 'EamesBoldItalic', 'Times', serif;
+    font-size: 2.0em;
+    text-align: center;
+    color: #fff;
+    z-index: 999;
+    position: absolute;
+}
+
+
+/*circle fun*/
+
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+	margin: 10px;
+}
+
+
+/* HOVER*/
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 8px rgba(255,255,255,0.6),
+		0 1px 1px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1, .ch-img-2, .ch-img-3, .ch-img-4, .ch-img-5,.ch-img-6, .ch-img-7, .ch-img-8, .ch-img-9, .ch-img-10, .ch-img-11, .ch-img-12, .ch-img-13, .ch-img-14 {
+    background-size: 100%;
+}
+
+.ch-img-1 { 
+	background-image: url(img/hs_diploma.png);
+}
+
+.ch-img-2 { 
+	background-image: url(img/photog.png);
+}
+
+.ch-img-3 { 
+	background-image: url(img/mba.png);
+}
+
+.ch-img-4 { 
+	background-image: url(img/justice.png);
+}
+
+.ch-img-5 { 
+	background-image: url(img/polisci.png);
+}
+
+.ch-img-6 { 
+	background-image: url(img/human_dev.png);
+}
+
+.ch-img-7 { 
+	background-image: url(img/comm.png);
+}
+
+.ch-img-8 { 
+	background-image: url(img/banking.png);
+}
+
+.ch-img-9 { 
+	background-image: url(img/cruise.png);
+}
+
+.ch-img-10 { 
+	background-image: url(img/tv.png);
+}
+
+.ch-img-11 { 
+	background-image: url(img/marketing.png);
+}
+
+.ch-img-12 { 
+	background-image: url(img/wine.png);
+}
+
+.ch-img-13 { 
+	background-image: url(img/poli_ad.png);
+}
+
+.ch-img-14 { 
+	background-image: url(img/web_dev.png);
+}
+
+.ch-info {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+    text-align: center;
+    width: 100%;
+    vertical-align:middle;
+}
+
+.peach .ch-info {
+background: rgba(238,95,71, 0.8);
+}
+
+.red .ch-info {
+background: rgba(211,36,39, 0.8);
+}
+
+.teal .ch-info {
+background: rgba(161,207,202, 0.8);
+}
+
+.blue .ch-info {
+background: rgba(16,69,115, 0.8);
+}
+
+.green .ch-info {
+background: rgba(109,190,93, 0.8);
+}
+
+.yellow .ch-info {
+background: rgba(244,195,0, 0.8);
+}
+
+.orange .ch-info {
+background: rgba(229,103,37, 0.8);
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+    line-height: 1.1em;
+	margin: 2% 0px;
+	padding: 30px 0 0 0;
+	font-family: 'EamesBoldItalic', Times New Roman , serif;
+    font-style:italic;
+    font-weight: bold;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 1px 1px;
+	font-style: normal;
+    font-family: 'GothamThin', Arial, sans-serif;
+	margin: 0 3px;
+	font-size: 0.9em;
+    line-height: 0.8em;
+	transition: all .25s ease-in-out 0.4s;
+}
+
+.ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
+
+.bubble_left, .bubble_right {
+    padding: 15% 0 0 0;
+    display: block;
+    width: 50%;    
+}
+
+.bubble_left {
+    float: left;
+}
+
+.bubble_right {
+    float: right;
+}
+.bubble_left h1, .bubble_right h1{
+    text-align: center;
+   color: #104573;
+	padding: 10px 0px;
+	font-style: normal;
+    font-family: 'GothamThin', Arial, sans-serif;
+	margin: 0 3px;
+	font-size: 1.7em;
+    line-height: 1.8em;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 1024px) 
+{
+    
+.ch-img-1 { 
+	background-image: url(img/hs_diploma_m.png);
+}
+
+.ch-img-2 { 
+	background-image: url(img/photog_m.png);
+}
+
+.ch-img-3 { 
+	background-image: url(img/mba_m.png);
+}
+
+.ch-img-4 { 
+	background-image: url(img/justice_m.png);
+}
+
+.ch-img-5 { 
+	background-image: url(img/polisci_m.png);
+}
+
+.ch-img-6 { 
+	background-image: url(img/human_dev_m.png);
+}
+
+.ch-img-7 { 
+	background-image: url(img/comm_m.png);
+}
+
+.ch-img-8 { 
+	background-image: url(img/banking_m.png);
+}
+
+.ch-img-9 { 
+	background-image: url(img/cruise_m.png);
+}
+
+.ch-img-10 { 
+	background-image: url(img/tv_m.png);
+}
+
+.ch-img-11 { 
+	background-image: url(img/marketing_m.png);
+}
+
+.ch-img-12 { 
+	background-image: url(img/wine_m.png);
+}
+
+.ch-img-13 { 
+	background-image: url(img/poli_ad_m.png);
+}
+
+.ch-img-14 { 
+	background-image: url(img/web_dev_m.png);
+}
+    
+}

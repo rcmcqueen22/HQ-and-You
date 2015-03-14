@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Each Journey is Unique</title>
+<link rel="stylesheet" type="text/css" href="css/IG.css">   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+});
+</script>
+    
+</head>
+<body>
+<div>
+<div class="fun">
+
+<div class="fadein">
+      <img src="wireframes/GAP_IG_Wire_Frames-01.png"/>
+      <img src="wireframes/GAP_IG_Wire_Frames-02.png"/>
+      <img src="wireframes/GAP_IG_Wire_Frames-05.png"/>
+      <img src="wireframes/GAP_IG_Wire_Frames-06.png"/>
+      <img src="wireframes/GAP_IG_Wire_Frames-07.png"/>
+      <img src="wireframes/GAP_IG_Wire_Frames-08.png"/>
+</div>    
+    
+</div>
+</div>
+</body>
+</html>

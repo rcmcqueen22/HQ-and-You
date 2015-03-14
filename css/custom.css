@@ -1,0 +1,574 @@
+/********************
+FONTS
+********************/
+
+@font-face {
+    font-family: EamesBold;
+    src: url(../fonts/Eames/EamesBold/EamesCenturyModONBold.otf);
+}
+
+@font-face {
+    font-family: EamesBoldItalic;
+    src: url(../fonts/Eames/EamesBold/EamesCenturyModONBold-Italic.otf);
+}
+
+@font-face {
+    font-family: EamesBook;
+    src: url(../fonts/Eames/EamesBook/EamesCenturyModONBook.otf);
+}
+
+@font-face {
+    font-family: EamesBoookItalic;
+    src: url(../fonts/Eames/EamesBold/EamesCenturyModONBook-Italic.otf);
+}
+
+@font-face {
+    font-family: EamesThin;
+    src: url(../fonts/Eames/EamesThin/EamesCenturyModONThin.otf);
+}
+
+@font-face {
+    font-family: EamesThinItalic;
+    src: url(../fonts/Eames/EamesBold/EamesCenturyModONThin-Italic.otf);
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/Gotham/Gotham-Bold/Gotham-Bold.ttf);
+}
+
+@font-face {
+    font-family: GothamBoldItalic;
+    src: url(../fonts/Gotham/Gotham-Bold/Gotham-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(../fonts/Gotham/Gotham-Book/Gotham-Book.ttf);
+}
+
+@font-face {
+    font-family: GothamBookItalic;
+    src: url(../fonts/Gotham/Gotham-Book/Gotham-BookItalic.ttf);
+}
+
+@font-face {
+    font-family: GothamThin;
+    src: url(../fonts/Gotham/Gotham-Thin/Gotham-Thin.ttf);
+}
+
+@font-face {
+    font-family: GothamThinItalic;
+    src: url(../fonts/Gotham/Gotham-Thin/Gotham-ThinItalic.ttf);
+}
+
+/********************
+UTILITY
+********************/
+
+body, p {
+	font-family: 'GothamBook', sans-serif;
+}
+
+.space-25 {
+	margin: 25px auto;
+}
+
+.space-top-25 {
+	margin-top: 25px;
+}
+
+.space-bottom-25 {
+	margin-bottom: 25px;
+}
+
+.space-50 {
+	margin: 50px auto;
+}
+
+.space-top-50 {
+	margin-top: 50px;
+}
+
+.space-bottom-50 {
+	margin-bottom: 50px;
+}
+
+.space-100 {
+	margin: 100px auto;
+}
+
+.space-top-100 {
+	margin-top: 100px;
+}
+
+.space-bottom-100 {
+	margin-bottom: 100px;
+}
+
+.full {
+	width: 100%;
+	max-width: 100%;
+}
+
+.last {
+	margin-right: 0 !important;
+	padding-right: 0 !important;
+}
+
+.center {
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 200;
+	font-family: "GothamBook", "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+h1 {
+	font-family: 'EamesBook', serif;
+}
+
+button.slick-prev:hover,
+button.slick-prev:focus,
+button.slick-next:hover,
+button.slick-next:focus  {
+	background: none !important;
+}
+
+/********************
+HEADER
+********************/
+a.logo {
+	background: url(../img/hi-potential.png) no-repeat;
+	background-size: 432px 95px;
+	display: block;
+	margin: 2em auto;
+	width: 432px;
+	height: 95px;
+}
+
+/********************
+LANDING
+********************/
+.intro-content h1,
+.intro-content h4,
+.intro-content p {
+	color: #fff;
+}
+
+.full .intro-content h1 {
+	font-family: 'EamesBoldItalic', serif;
+	text-shadow: 0 2px 0 #004779;
+	font-size: 4rem;
+	position: relative;
+	z-index: 100;
+}
+
+.full.people-work .intro-content h1 {
+	margin-top: -8em;
+}
+
+.full.perks .intro-content h1,
+.full.city .intro-content h1 {
+	margin-top: -9em;
+}
+
+.intro h1 {
+	float: left;
+}
+
+.intro p {
+	float: right;
+	margin-top: 30px;
+}
+
+.intro p a:hover {
+	color: #e03c31;
+}
+
+.parallax-image-wrapper {
+	position:fixed;
+	left:0;
+	width:100%;
+	overflow:hidden;
+}
+
+.parallax-image-wrapper-25 {
+	height:25%;
+	top:-25%;
+}
+
+.parallax-image-wrapper-50 {
+	height:50%;
+	top:-50%;
+}
+
+.parallax-image-wrapper-75 {
+	height:75%;
+	top:-75%;
+}
+
+.parallax-image-wrapper-100 {
+	height:100%;
+	top:-100%;
+}
+
+.parallax-image {
+	display:none;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+
+.parallax-image-50 {
+	height:200%;
+	top:-50%;
+}
+
+.parallax-image-100 {
+	height:100%;
+	top:0;
+}
+
+.parallax-image.skrollable-between {
+	display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+	display:none !important;
+}
+
+#skrollr-body {
+	height:100%;
+	overflow:visible;
+	position:relative;
+}
+
+.gap {
+	background:transparent center no-repeat;
+	background-size:cover;
+}
+
+.skrollr .gap {
+	background:transparent !important;
+}
+
+.gap-25 {
+	height:25%;
+}
+
+.gap-75 {
+	height:75%;
+}
+
+.gap-50 {
+	height:50%;
+}
+
+.gap-100 {
+	height:100%;
+}
+
+.header, .content {
+	background:#fff;
+	padding:0;
+
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.content-full {
+	height:100%;
+}
+
+#done {
+	height:50%;
+}
+
+.full.city span.heart {
+	color: #fff;
+}
+
+/********************
+PERKS
+********************/
+
+/********************
+PEOPLE
+********************/
+.map .columns,
+.education .columns {
+	padding: 0;
+
+}
+
+.education .fun {
+	background: none repeat scroll 0 0 #fff2f0;
+    float: left;
+    height: auto;
+    max-height: 1200px !important;
+    position: relative;
+    width: 100%;
+}
+
+.fun_header {
+	max-width: 1040px !important;
+}
+
+/********************
+CITY LIFE
+********************/
+span.heart {
+	color: #e03c31;
+	font-size: 1.2em;
+}
+
+.weather h2 {
+	float: right;
+}
+
+/** Weather Widget **/
+@font-face {
+    font-family: 'weather';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+  color: #e03c31;
+  font-family: weather;
+  font-size: 5rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1rem;
+}
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather li {
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#weather .currently {
+  margin: 0 20px;
+}
+
+.schedule img,
+.schedule h4 {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/********************
+SIGN UP
+********************/
+.checkbox {
+	float: left;
+}
+
+/********************
+FOOTER
+********************/
+h5.hashtag {
+	text-align: center;
+}
+
+footer.full {
+	background: none;
+	border-top: 1px solid #eee;
+}
+
+footer h2 {
+	font-family: 'EamesBoldItalic', serif;
+}
+
+footer p.copyright {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.button.outline {
+	background-color: #fff;
+	border: 2px solid #e03c31;
+	color: #e03c31;
+	text-transform: uppercase;
+}
+
+.button.outline:hover,
+.button.outline:focus {
+	background-color: #e03c31;
+	color: #fff;
+}
+
+.button.feedback {
+	margin-left: 2em;
+}
+
+footer .button.center {
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+}
+
+/********************
+MEDIA QUERIES
+********************/
+
+/* Small screens - max-width: 640px */
+@media only screen and (max-width: 40em) {
+	/* Logo */
+	a.logo {
+		background: url("../img/hi-potential.png") no-repeat scroll 0 0 / 300px 66px rgba(0, 0, 0, 0);
+		height: 66px;
+		width: 300px;
+	}
+
+	/* Page Title */
+	.intro h1,
+	.intro p {
+		text-align: center;
+		float: none;
+	}
+
+	/* Landing */
+	.full .intro-content h1 {
+		font-size: 3rem;
+	}
+
+	/* People */
+	.fadein {
+		height: 280px !important;
+	}
+
+	/* Social */
+	.social img {
+		margin-left: 5px;
+		margin-right: 5px;
+		width: 16px;
+	}
+
+	/* Footer */
+	footer .button.center {
+		width: 50%;
+		font-size: 0.8rem;
+	}
+
+	.button.feedback {
+		margin: 0;
+	}
+}
+
+/* Medium screens - min-width 641px */
+@media only screen and (min-width: 40.063em) {
+	/* People */
+	.full.people-work .intro-content h1 {
+		margin-top: -6em;
+	}
+
+	.fadein {
+		height: 320px !important;
+	}
+
+	.full.perks .intro-content h1,
+	.full.city .intro-content h1 {
+		margin-top: -7em;
+	}
+
+	/* Social */
+	.social img {
+		margin-left: 8px;
+		margin-right: 8px;
+		width: 24px;
+	}
+}
+
+/* Min-width 680px */
+@media only screen and (min-width: 42.500em) {
+	.fadein {
+		height: 400px !important;
+	}
+}
+
+/* Min-width 850px */
+@media only screen and (min-width: 52.500em) {
+	.fadein {
+		height: 500px !important;
+	}
+}
+
+/* Large screens - min-width 1025px */
+@media only screen and (min-width: 64.063em) {
+	.social img {
+		margin-left: 18px;
+		margin-right: 15px;
+	}
+}
+

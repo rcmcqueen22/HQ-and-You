@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback | Old Navy</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="js/vendor/slick/slick.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <div class="row header">
+      <div class="small-12 columns">
+        <a class="logo" href="/"></a>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="row intro space-50">
+      <div class="small-12 medium-9 medium-centered columns space-bottom-50">
+      	<h1>What's your idea?</h1>
+        <p><a href="/">&laquo; Explore More</a></p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="row form">
+      <div class="small-12 medium-8 medium-centered columns space-bottom-50">
+        <form name="Feedback" method="post" action="success-feedback.php" data-abide>
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+              <label><h5>Name</h5>
+                <input name="name" type="text" placeholder="First Last" required />
+              </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <label><h5>Email Address</h5>
+                <input name="email" type="text" placeholder="email@domain.com" required />
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <label><h5>Idea</h5>
+                <textarea name="idea" rows="10" placeholder="What's your idea?"></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 medium-6 columns space-top-50">
+              <button class="button outline submit" name="submit" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="submitModal" class="reveal-modal" data-reveal>
+      <h3>Thank you!</h3>
+      <p>Your form has been sent successfully and we appreciate your feedback.</p>
+      <p><a href="/" class="button outline">&laquo; Explore More</a></p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <!-- Social -->
+    <div class="row social space-top-100 space-bottom-25">
+      <div class="small-6 medium-4 small-centered columns">
+        <a href="http://www.facebook.com/Oldnavy" target="_blank"><img class="left" src="img/facebook.png"></a>
+        <a href="http://www.twitter.com/oldnavy" target="_blank"><img class="left" src="img/twitter.png"></a>
+        <a href="http://pinterest.com/oldnavy/" target="_blank"><img class="left" src="img/pinterest.png"></a>
+        <a href="http://instagram.com/oldnavy" target="_blank"><img class="left" src="img/instagram.png"></a>
+        <a href="http://oldnavy.tumblr.com/" target="_blank"><img class="left last" src="img/tumblr.png"></a>
+      </div>
+    </div>
+    <div class="row space-bottom-100">
+      <div class="small-12 medium-4 small-centered columns">
+        <h5 class="hashtag"># O L D N A V Y <em>style</em></h5>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="full">
+      <div class="row space-top-50">
+        <div class="small-12 columns">
+          <a href="/" class="button outline center space-top-25">Explore More</a>
+        </div>
+      </div>
+      <p class="copyright space-top-50">&copy; 2015 Old Navy</p>
+    </footer>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/slick/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      // Sign Up Form Thank You
+      $("form").on("submit", function(e){
+        e.preventDefault();
+        $this = $(this);
+        $.ajax({
+          type: "POST",
+          url: $this.attr('action'),
+          data: $this.serialize(),
+        });
+      });
+
+      $('form').submit(function(){
+        $('#submitModal').foundation('reveal', 'open');
+      });
+    </script>
+
+  </body>
+</html>
